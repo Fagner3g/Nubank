@@ -19,5 +19,13 @@ export class HomePage {
 
   public slidesOptions = { slidesPerView: 3, freeMode: true };
 
+  public items: Array<{ icon: string; text: string }> = [
+    { icon: 'help-circle-outline', text: 'Me ajude' },
+    { icon: 'person-outline', text: 'Perfil' },
+    { icon: 'cash-outline', text: 'Configurar conta' },
+    { icon: 'card-outline', text: 'Configurar cartão' },
+    { icon: 'phone-portrait-outline', text: 'Configurações do app' },
+  ];
+
   constructor() {}
 }
