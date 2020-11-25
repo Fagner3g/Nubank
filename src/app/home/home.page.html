@@ -55,11 +55,57 @@
         </div>
       </ion-card-content>
     </ion-card>
+
+    <ion-card>
+      <ion-item class="ion-margin-vertical" lines="none">
+        <ion-icon slot="start" name="cash-outline"></ion-icon>
+        <ion-label>Conta</ion-label>
+        <ion-button color="dark" fill="clear" slot="end">
+          <ion-icon slot="icon-only" name="eye-off-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-card-content class="ion-no-padding">
+        <div class="ion-padding ion-margin-vertical cash">
+          <span class="blue">Saldo disponível</span>
+          <ion-text color="dark">
+            <span class="value">R$ 197,51</span>
+          </ion-text>
+        </div>
+
+        <div class="ion-padding-vertical footer">
+          <ion-item color="light" lines="none" detail>
+            <ion-icon slot="start" name="barcode-outline"></ion-icon>
+            <ion-label class="ion-text-wrap">Boleto de R$ 322,55 pago na segunda</ion-label>
+          </ion-item>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content class="ion-text-center">
+        <ion-icon class="gift" name="gift-outline"></ion-icon>
+
+        <div class="ion-margin-vertical">
+          <ion-text color="dark">
+            <p class="title">
+              <strong>Nubank Rewards</strong>
+            </p>
+
+            <p>Acumule pontos que nunca expiram e troque por passagens aéreas ou serviços que você realmente usa.</p>
+          </ion-text>
+        </div>
+
+        <ion-button expand="block" fill="outline">
+          <strong>ATIVE O SEU REWARDS</strong>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
 
 <ion-footer class="ion-no-border">
-  <ion-toolbar color="primary">
+  <ion-toolbar class="ion-no-margin ion-padding-vertical" color="primary">
     <ion-slides [options]="slidesOptions">
       <ion-slide *ngFor="let option of options">
         <div class="container ion-text-left">
