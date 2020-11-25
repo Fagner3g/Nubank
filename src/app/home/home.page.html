@@ -5,8 +5,8 @@
 
       <span>Fagner</span>
 
-      <ion-button color="light" fill="clear" size="small">
-        <ion-icon slot="icon-only" name="arrow-down-outline"></ion-icon>
+      <ion-button (click)="toggleBlocks()" color="light" fill="clear" size="small">
+        <ion-icon slot="icon-only" [name]="initialStep > 0 ? 'arrow-up-outline' : 'arrow-down-outline'"></ion-icon>
       </ion-button>
     </ion-title>
   </ion-toolbar>
@@ -33,7 +33,7 @@
     <ion-button class="logout" color="light" expand="block" fill="outline"> SAIR DA CONTA </ion-button>
   </div>
 
-  <div class="blocks">
+  <div #blocks class="blocks">
     <ion-card>
       <ion-item class="ion-margin-vertical" lines="none">
         <ion-icon slot="start" name="card-outline"></ion-icon>
