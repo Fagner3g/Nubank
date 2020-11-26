@@ -60,4 +60,8 @@ export class HomePage {
   setBackgroundOpacity() {
     this.renderer.setStyle(this.background.nativeElement, 'opacity', this.initialStep === 0 ? '0' : '1');
   }
+
+  fixedBlocks(): boolean {
+    return this.initialStep === this.maxTranslate;
+  }
 }

@@ -68,6 +68,12 @@ ion-content {
     overflow: scroll;
     z-index: 999;
 
+    &.fixed {
+      position: fixed;
+      top: 110px;
+      overflow: hidden;
+    }
+
     ion-card {
       .cash {
         span {
@@ -102,6 +108,14 @@ ion-content {
 }
 
 ion-footer {
+  &.hidden {
+    height: 0;
+
+    ion-slides {
+      opacity: 0;
+    }
+  }
+
   ion-slide {
     .container {
       width: 100%;
