@@ -1,5 +1,5 @@
   <h1 align="center">
-    <img src="img/nubank.gif" width="100%" height="100%" max-width:100% >
+    <img src="img/nubank.gif" width="250" height="100%" max-width:100% >
     </br>
     Clone Nubank
   </h1>
